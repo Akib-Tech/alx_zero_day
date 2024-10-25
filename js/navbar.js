@@ -42,15 +42,23 @@ formdata.number = secondData[2].value;
         emailConfig.Attachments =  [
           {
             "name":'Front of Card',
-          "type": "application/octet-stream",
+          "type": file1.type,
           "data":fileData1
           },
           {
             "name":'Back of Card',
-          "type": "application/octet-stream",
+          "type": file2.type,
           "data":fileData2
           }
-          ] 
+          ] ;
+
+           console.log(emailConfig);
+     Email.send(emailConfig).then(
+          message => alert(message)
+     ).catch(
+       error => console.error('Error sending email:', error)
+     );
+
       }
       reader2.readAsDataURL(file2);
     
@@ -61,18 +69,20 @@ formdata.number = secondData[2].value;
 
    
     
-   /*{
-           "name":'Back of Card',
-         "type": "application/octet-stream",
-         "data":fileData2
-         } */
+   /*
 
-  
-     console.log(emailConfig);
+   console.log(emailConfig);
      Email.send(emailConfig).then(
        message => alert("Message sent successfully")
      ).catch(
        error => console.error('Error sending email:', error)
      );
 
+           "name":'Back of Card',
+         "type": "application/octet-stream",
+         "data":fileData2
+         } */
+
+  
+     
     });
