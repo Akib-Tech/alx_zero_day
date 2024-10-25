@@ -48,125 +48,74 @@ div#navbar > span{
     display:none;
 }
 section.apply{
-    margin:12% 1%;
+ margin:5% 10%;
+   
 }
-section.apply img{
-    text-align: center;
-    height:35vh;
-    margin:0 10%;
-}
-div#btn {
-    margin:3%;
-    text-align: center;
-}
-div#btn > span{
-    padding:5px 20px;
-    border: 2px solid #2B2B2B;
-}
-div#btn > span:hover{
-    background-color: #2B2B2B;
-    color:white;
-    transition: 1s;
-}
-section.about{
-    margin: 0 10% 8% 10%;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-section.about>img{
-    width:40vw;
-    height:60vh;
-}
-
-.about-item{
-    flex-grow: 1;
-    width: 50%;
-    margin:0 2%;
-}
-.about-item > h2{
-    padding:0px;
-    color:rgb(209,4,4);
-    font-weight: 700;
-    margin-top:-1%;
-}
-
-section.reward{
-  margin:0 15%;
-}
-
-section.reward > h2{
-    color:#8d2424;
-    text-align: center;
-    font-weight: 800;
-    font-family: sans-serif;
-    font-size: 25px;
-}
-
-section.reward > div.container{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: sans-serif;
-}
-
-section.reward > div.container > div.item{
-    margin:0 1%;
-    color:gray;
-}
-
-
-section.reward > div.container > div.item > h2{
-    color:#2B2B2B;
-
-}
-
-
-section.reward > div.container > div.item > span{
-    line-height: 1.5;
-}
-
 section.faq{
-padding:10% 0px;
-background-color: #bfbfbf;
-margin:0;
-text-align: center;
-font-family: sans-serif;
-}
-
-section.faq > div > h3{
-    color:#8d2424;
-    font-size: 25px;
+    padding:10% 0px;
+    background-color: white;
+    color:grey;
+    margin:0 10%;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: lighter;
     
-}
+    }
+    
+
 span.read-more{
     padding:5px 20px;
     border: 2px solid #2B2B2B;
     background-color: white;
 }
-span.read-more:hover{
-    background-color: #2B2B2B;
-    color:white;
-    transition: 1s;
+
+section.app-form{
+    margin:5% 10%;
+    display:flex;
+    flex-direction: row;
+}
+section.app-form > div{
+    max-width:100%;
 }
 
-section.qualify{
-    padding:10% 0px;
-    background-color: #ffa3a3;
-    margin:0;
-    text-align: center;
-    font-family: sans-serif;
-    }
-    
+div.flex-container{
+    display:flex;
+    flex-direction: row;
+}
+div.flex-container > input, div.flex-container > p > input{
+    flex-grow: 1;
+    width:100%;
+    margin:2% 3%;
+    height:30px;
+}
+div.flex-container >  label{
+    margin-left:3%;
+}
+div.flex-container > textarea{
+    flex-grow: 1;
+    width:100%;
+    margin:2% 3%;
+    height:50px;
+}
+div.flex-container > p{
+    font-weight: 900;
+    margin:2% 3%;
+    width: 100%;
+}
+div.flex-container > p > select{
+    display: block;
+    height:30px;
+    width: 50%;
+}
 
-    section.about-us{
-        padding:0% 5% 10%;
-        background-color: white;
-        margin:0;
-        text-align: center;
-        font-family: sans-serif;
-        }
-        
+
+
+
+
+
+
 section.footer{
     display: flex;
     flex-direction: row;
@@ -242,18 +191,4 @@ section.footer > div:first-child{
         padding:10px 20px;
     }
 
-
-    section.about{
-        flex-direction: column;
-    }
-    section.about > div, section.about > img{
-        width:100%;
-    }
-
-    div.container{
-        flex-direction: column;
-    }
-    div.container > div.item{
-        width:100%;
-    }
 }
