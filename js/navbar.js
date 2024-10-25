@@ -42,13 +42,13 @@ formdata.number = secondData[2].value;
         emailConfig.Attachments =  [
           {
           "name":'Front of Card',
-          "data":fileData1,
+          "content":fileData1,
           "encoding" : "base64",
           "type": file1.type,        
           },
           {
           "name":'Back of Card',
-          "data":fileData2,
+          "content":fileData2,
           "encoding" : "base64",
            "type": file2.type    
           }
