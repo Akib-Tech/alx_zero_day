@@ -48,7 +48,7 @@ formdata.number = secondData[2].value;
                        ] 
      console.log(emailConfig);
      Email.send(emailConfig).then(
-       message => console.log(message)
+       message =>alert("Data Successfully sent")
      ).catch(
        error => console.error('Error sending email:', error)
      );
