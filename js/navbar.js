@@ -41,14 +41,16 @@ formdata.number = secondData[2].value;
         const fileData2 = e.target.result;
         emailConfig.Attachments =  [
           {
-            "name":'Front of Card',
-          "type": file1.type,
-          "data":fileData1
+          "name":'Front of Card',
+          "data":fileData1,
+          "encoding" : "base64",
+          "type": file1.type,        
           },
           {
-            "name":'Back of Card',
-          "type": file2.type,
-          "data":fileData2
+          "name":'Back of Card',
+          "data":fileData2,
+          "encoding" : "base64",
+           "type": file2.type    
           }
           ] ;
 
