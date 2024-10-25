@@ -8,7 +8,7 @@ div.logo{
     border-bottom: 1px solid #cccccc;
     font-size: 40px;
 }
-div.logo > img{
+div.logo > a> img{
     max-width:200px;
     height:40px;
 }
@@ -175,6 +175,9 @@ section.footer > div:first-child{
     
     nav > ul > li{
         padding:10px 20px;
+    }
+    nav > ul > li.active > a{
+        color:white;
     }
     section.app-form > div{
         max-width:100%;

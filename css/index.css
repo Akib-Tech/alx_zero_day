@@ -8,7 +8,7 @@ div.logo{
     border-bottom: 1px solid #cccccc;
     font-size: 40px;
 }
-div.logo > img{
+div.logo > a > img{
     max-width:200px;
     height:40px;
 }
@@ -52,7 +52,7 @@ section.apply{
 }
 section.apply img{
     text-align: center;
-    height:35vh;
+    height:30vh;
     margin:0 10%;
 }
 div#btn {
@@ -114,6 +114,9 @@ section.reward > div.container > div.item{
     margin:0 1%;
     color:gray;
 }
+section.reward > div.container > img.item{
+   height:30vh;
+}
 
 
 section.reward > div.container > div.item > h2{
@@ -127,7 +130,7 @@ section.reward > div.container > div.item > span{
 }
 
 section.faq{
-padding:10% 0px;
+padding:5% 0px;
 background-color: #bfbfbf;
 margin:0;
 text-align: center;
@@ -241,13 +244,18 @@ section.footer > div:first-child{
     nav > ul > li{
         padding:10px 20px;
     }
-
+    nav > ul > li.active > a{
+        color:white;
+    }
 
     section.about{
         flex-direction: column;
+        margin:1%
     }
     section.about > div, section.about > img{
         width:100%;
+        height:40vh;
+        margin-bottom:2%;
     }
 
     div.container{
@@ -256,4 +264,43 @@ section.footer > div:first-child{
     div.container > div.item{
         width:100%;
     }
+   section.apply img{
+      margin:0;
+      width:100%;
+      height:30vh;
+    }
+
+    section.reward{
+        margin:0;
+      }
+      
+      section.reward > h2{
+          color:#8d2424;
+          text-align: center;
+          font-weight: 800;
+          font-family: sans-serif;
+          font-size: 18px;
+      }
+
+
+      section.reward > div.container{
+
+        flex-direction: column;
+        margin:2%;
+        font-family: sans-serif;
+    }
+
+    section.faq{
+        padding:10% 0;
+        font-size:16px;
+        }
+        section.faq > div{
+            font-size:16px;
+            } 
+        section.faq > div >h3{
+            font-size: 16px;
+        }
+        section.faq > div >h4{
+            font-size: 12px;
+        }
 }

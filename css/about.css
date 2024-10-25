@@ -8,7 +8,7 @@ div.logo{
     border-bottom: 1px solid #cccccc;
     font-size: 40px;
 }
-div.logo > img{
+div.logo > a >img{
     max-width:200px;
     height:40px;
 }
@@ -246,5 +246,16 @@ section.footer > div:first-child{
     nav > ul > li{
         padding:10px 20px;
     }
-
+    nav > ul > li.active > a{
+        color:white;
+    }
+    section.apply{
+        margin:12% 1% 0 1%;
+    }
+    section.apply img{
+        text-align: center;
+        width:100%;
+        height:35vh;
+        margin:0;
+    }
 }
