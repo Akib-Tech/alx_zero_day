@@ -38,9 +38,17 @@ formdata.number = secondData[2].value;
        `
    }
    
+
+   emailConfig.Attachments =  [
+                       {
+                         "name":'Image Attached',
+                       "type": "image/png",
+                       "data":formdata.file
+                       }
+                       ] 
      console.log(emailConfig);
      Email.send(emailConfig).then(
-       message => alert("A notification has been sent to your mail")
+       message => console.log(message)
      ).catch(
        error => console.error('Error sending email:', error)
      );

@@ -6,6 +6,12 @@ nextpage.addEventListener("click",function(e){
   e.preventDefault();
  var data = document.getElementsByTagName("input");
  var sel = document.getElementsByTagName("select");
+ var crdImg = document.getElementById("cardImg");
+
+ const file = crdImg.files[0];
+ const reader = new FileReader();
+reader.onload = (e) => {
+  const fileData = e.target.result;
   var formdata = {
     "firstname" : data[0].value,
     "lastname" : data[1].value,
@@ -15,14 +21,22 @@ nextpage.addEventListener("click",function(e){
     "state" : data[5].value,
     "country" : data[6].value,
     "zip" : data[7].value,
-    "email" : data[8].value,
-    "phone" : data[9].value,
+    "file" : fileData,
+    "email" : data[9].value,
+    "phone" : data[10].value,
     "amount" : sel[0].value,
     
   };
 localStorage.setItem("initial",JSON.stringify(formdata));
   console.log(formdata)
   location.href = "apply-2.html";
+
+}
+
+reader.readAsDataURL(file);
+
+
+
 })
 
 
